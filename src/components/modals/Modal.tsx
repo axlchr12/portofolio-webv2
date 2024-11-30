@@ -1,16 +1,16 @@
-'use client';
+'use client'
 
-import { useState } from 'react';
+import { useState } from 'react'
 import {
   Dialog,
   DialogBackdrop,
   DialogPanel,
   DialogTitle,
-} from '@headlessui/react';
-import { ExclamationTriangleIcon } from '@heroicons/react/24/outline';
+} from '@headlessui/react'
+import { ExclamationTriangleIcon } from '@heroicons/react/24/outline'
 
 export const Modal = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(true)
 
   return (
     <Dialog open={open} onClose={setOpen} className="relative z-10">
@@ -71,5 +71,5 @@ export const Modal = () => {
         </div>
       </div>
     </Dialog>
-  );
-};
+  )
+}

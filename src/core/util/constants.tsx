@@ -1,5 +1,5 @@
 export const WEB_INFO = () => {
-  const mainTitle = 'Axel C';
+  const mainTitle = 'Axel C'
   return {
     HOME_PAGE: {
       TITLE: `${mainTitle} - Home`,
@@ -17,5 +17,5 @@ export const WEB_INFO = () => {
       TITLE: `${mainTitle} - Projects`,
       DESC: 'Projects',
     },
-  };
-};
+  }
+}
