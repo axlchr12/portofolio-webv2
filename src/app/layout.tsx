@@ -4,6 +4,7 @@ import { Raleway } from 'next/font/google'
 import { CardContainer } from '@/components/card/CardContainer'
 import { Navbar } from '@/components/Navbar/Navbar'
 import { Footer } from '@/components/Footer/Footer'
+import { WebVitals } from './web-vitals'
 
 const raleway = Raleway({
   subsets: ['latin'],
@@ -28,6 +29,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </CardContainer>
+        <WebVitals />
       </body>
     </html>
   )
