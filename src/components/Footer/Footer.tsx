@@ -1,7 +1,10 @@
 export const Footer = () => {
+  const date = new Date()
   return (
     <div className="mx-3 border-t border-slate-200 pt-2 px-1 flex">
-      <span className="text-sm text-slate-600 font-medium">Axel C - 2024</span>
+      <p className="text-sm text-[#2d334a] font-medium">
+        Axel C - {date.getFullYear()}
+      </p>
     </div>
   )
 }
