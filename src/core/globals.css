@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  h1 {
+    @apply text-5xl;
+    @apply font-bold;
+  }
+  h2 {
+    @apply text-xl;
+  }
+  /* ... */
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;

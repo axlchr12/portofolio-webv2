@@ -1,6 +1,9 @@
 import type { Metadata } from 'next'
 import '../core/globals.css'
 import { Raleway } from 'next/font/google'
+import { CardContainer } from '@/components/card/CardContainer'
+import { Navbar } from '@/components/Navbar/Navbar'
+import { Footer } from '@/components/Footer/Footer'
 
 const raleway = Raleway({
   subsets: ['latin'],
@@ -19,9 +22,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${raleway.className} antialiased`}>
-        H2 TEST
-        {children}
+      <body className={`${raleway.className} antialiased bg-[#232946]`}>
+        <CardContainer>
+          <Navbar />
+          {children}
+          <Footer />
+        </CardContainer>
       </body>
     </html>
   )

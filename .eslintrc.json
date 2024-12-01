@@ -8,6 +8,7 @@
   "rules": {
     "semi": ["error", "never"], // Disable semicolons
     "quotes": ["error", "single"],
+    "@typescript-eslint/no-explicit-any": 0,
     "prettier/prettier": [
       "error",
       {
